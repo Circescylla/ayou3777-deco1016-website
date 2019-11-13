@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Links to other pages-->
+  <title>Landing Page</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <link rel="interaction" href="script.js" type="text/js" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body class="landingPage">
+  <!--Navigation Bar-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <!--Styling Logo-->
+      <p style="font-size:30px; color:#2e2e2e; font-weight:normal; font-style:normal;">
+        Meal<span style="color: #c94646">Pro</span>
+      </p>
+    </a>
+    <!--Makes navigation bar collapse for mobile version-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <!--Navigation bar contents-->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Plans</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">How It Works</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Support</a>
+        </li>
+      </ul>
+      <!--Sign Up and Login Buttons in Navigation-->
+      <ul class="navbar-nav ml-md-auto">
+        <li class="nav-item">
+          <a class="nav-link-rd" href="#">Login<span class="sr-only"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-gr" href="2. signup.html">Sign Up<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Main Content-->
+  <div class="overlay-text">
+    <div class="Signup">
+      <!--Heading-->
+      <h1 style="font-size:50px">Deliciously Simple</h1>
+      <!--Paragraph Text-->
+      <h4>
+        High quality nutritious meals delivered right to your doorstep. Save
+        money, time and eat well.
+      </h4>
+      <div class="h5landing">
+        First time users get three free meals with their first order
+      </div>
+      <!--Button-->
+      <a class="nav-link" href="2. signup.html"><button type="button" class="btn2 btn-success">
+          Get 3 FREE Meals
+        </button></a>
+    </div>
+  </div>
+  <!--Background Image-->
+  <div class="row">
+    <img src="Images/Cover_image.jpg" alt="Cover" style="width:100%" id="landingimage" />
+  </div>
+  <div class="footer">
+    <h2></h2>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Check Out</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <link rel="interaction" href="script.js" type="text/js" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <style>
+    body {
+      background-image: url("Images/Cover_image copy.jpg");
+      background-color: #cccccc;
+      background-size: cover;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!------------------------Styles top bar of page--------------------------->
+  <div class="row">
+    <div class="col-20">
+      <!-----Styles the Logo----->
+      <p style="font-size:30px; color:#2e2e2e; font-weight:normal; font-style:normal;">
+        Meal<span style="color: #c94646">Pro</span>
+      </p>
+      <!--Progress bar for mobile-->
+      <div class="meter">
+        <span style="width:75%"></span>
+      </div>
+    </div>
+    <div class="col-80">
+      <!-----Progress Bar----->
+      <nav>
+        <ul class="pagination">
+          <li class="page-item-bar">
+            <a class="page-link-bar" style="background-color: #3f3f3f">1</a>
+          </li>
+          <li class="page-item-bar">
+            <a class="page-link-bar" style="background-color: #3f3f3f">2</a>
+          </li>
+          <li class="page-item-bar">
+            <a class="page-link-bar" style="background-color: #3f3f3f">3</a>
+          </li>
+          <li class="page-item-bar">
+            <a class="page-link-bar" style="background-color: #3f3f3f">4</a>
+          </li>
+          <li class="page-item-bar">
+            <a class="page-link-bar">5</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  </div>
+  <!-----Main Body----->
+  <div id="checkout_mobile" class="row">
+    <!-----Main Content (Left)----->
+    <div class="col-70">
+      <div class="container1">
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-50">
+              <!-----Check-Out Form----->
+              <h3>Check Out</h3>
+              <!-----Creates credit card box----->
+              <div class="container-red">
+                <label for="cname"></label>
+                <input type="text" id="cname" name="cardname" placeholder="Cardholder's Name" />
+                <label for="ccnum"></label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="Card Number" />
+                <div class="row">
+                  <div class="col-50">
+                    <label for="cvv"></label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352" />
+                  </div>
+                  <div class="col-50">
+                    <label for="expmonth"></label>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" />
+                  </div>
+                </div>
+              </div>
+              <!-----Tick Box----->
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                <label class="form-check-label" for="defaultCheck1">
+                  By ticking this I agree to the terms and conditions
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-----Contact Details Form----->
+          <div class="row">
+            <div class="col-50">
+              <hr />
+              <h3>Contact Details</h3>
+              <h5>We'll text you when your order has arrived</h5>
+              <input type="text" id="number" name="number" placeholder="Phone Number" />
+            </div>
+          </div>
+          <!-----Shipping Address Tick Box----->
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr" />
+            Shipping address same as billing
+          </label>
+        </form>
+      </div>
+    </div>
+    <!-----Order Summary (Right)----->
+    <div class="col-30">
+      <div id="id" class="container1">
+        <!-----Indented List----->
+        <h3>Summary</h3>
+        <div class="summary">
+          <ul>
+            <li>Plan</li>
+            <ul>
+              <li>Feeds 2 people</li>
+              <li>3 meals per week</li>
+            </ul>
+            <li>Delivery On</li>
+            <ul>
+              <li>Tuesday 11th December</li>
+              <li>11:00am</li>
+            </ul>
+            <li>Delivery To</li>
+            <ul>
+              <li>42 Monavale Rd</li>
+              <li>St Ives, 2075, Sydney</li>
+            </ul>
+            <li>Contact Details</li>
+            <ul>
+              <li>0413 656 695</li>
+            </ul>
+          </ul>
+
+          <hr />
+          <!-----Separately styled pricebox----->
+          <div class="pricebox">
+            <p>Total <s>$45</s> $30</p>
+            <p>Special Code Applied</p>
+          </div>
+        </div>
+      </div>
+      <!-----Separately styled button----->
+      <div style="margin: 0% 0% 0% 25%">
+        <a href="6. choosemeal.html">
+          <button type="button" value="submit" class="btnnext" style="width: 50%">
+            Next
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

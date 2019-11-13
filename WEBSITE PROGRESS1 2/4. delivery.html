@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Delivery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="interaction" href="script.js" type="text/js" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <style>
+        body {
+            background-image: url("Images/Cover_image copy.jpg");
+            background-color: #cccccc;
+            background-size: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!------------------------Styles top bar of page--------------------------->
+    <div class="row">
+        <div class="col-20">
+            <!-----Styles the Logo----->
+            <p style="font-size:30px; color:#2e2e2e; font-weight:normal; font-style:normal;">
+                Meal<span style="color: #c94646">Pro</span>
+            </p>
+            <!--Progress bar for mobile-->
+            <div class="meter">
+                <span style="width:60%"></span>
+            </div>
+        </div>
+        <div class="col-80">
+            <!-----Progress Bar----->
+            <nav>
+                <ul class="pagination">
+                    <li class="page-item-bar">
+                        <!-----Colours in progress----->
+                        <a class="page-link-bar" style="background-color: #3f3f3f">1</a>
+                    </li>
+                    <li class="page-item-bar">
+                        <a class="page-link-bar" style="background-color: #3f3f3f">2</a>
+                    </li>
+                    <li class="page-item-bar">
+                        <a class="page-link-bar" style="background-color: #3f3f3f">3</a>
+                    </li>
+                    <li class="page-item-bar">
+                        <a class="page-link-bar">4</a>
+                    </li>
+                    <li class="page-item-bar">
+                        <a class="page-link-bar">5</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="delivery_mobile" class="row">
+        <!-----Main Form Content (Left)----->
+        <div id="delivery_mob_content" class="col-75">
+            <div class="container1">
+                <div class="row">
+                    <div class="col-50">
+                        <h3>When would you like your delivery?</h3>
+                        <form>
+                            <h5>Choose a Date</h5>
+                            <form action="/action_page.php">
+                                <select date="date">
+                                    <option value="11/11">11/11</option>
+                                    <option value="12/11">12/11</option>
+                                    <option value="13/11">13/11</option>
+                                    <option value="14/11">14/11</option>
+                                </select>
+                            </form>
+                            <h5>Choose a Time</h5>
+                            <select time="time">
+                                <option value="10:00am">10:00am</option>
+                                <option value="11:00am">11:00am</option>
+                                <option value="12:00">12:00am</option>
+                                <option value="01:00pm">01:00pm</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-----Form - Personal Details----->
+                    <div class="col-50">
+                        <hr>
+                        <h3>Where should we deliver to?</h3>
+                        <div class="row">
+                            <!-----Split into columns for formatting purposes----->
+                            <div class="col-50">
+                                <input type="text" id="fname" name="fname" placeholder="First Name">
+                                </form>
+                            </div>
+                            <div class="col-50">
+                                <input type="text" id="lname" name="lname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <input type="text" id="adr" name="address" placeholder="Street Address">
+                        <input type="text" id="city" name="city" placeholder="City">
+                        <div class="row">
+                            <div class="col-50">
+                                <input type="text" id="state" name="state" placeholder="State">
+                            </div>
+                            <div class="col-50">
+                                <input type="text" id="post" name="post" placeholder="Post Code">
+                            </div>
+                        </div>
+                        <div>
+                            <!-----Delivery Instructions----->
+                            <label for="Instructions"></i> Delivery
+                                Instructions</label>
+                            <input type="text" id="message" name="message" placeholder="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----Delivery Form Summary (Right)----->
+        <div id="delivery_mob_summary" class="col-25">
+            <div class="container1">
+                <h3>Summary</h3>
+                <div class="summary">
+                    <!-----List Items----->
+                    <ul>
+                        <li>Plan</li>
+                        <ul>
+                            <li>Feeds 2 people</li>
+                            <li>3 meals per week</li>
+                        </ul>
+                        <li>Delivery On</li>
+                        <ul>
+                            <li>Tuesday 11th December</li>
+                            <li>11:00am</li>
+                        </ul>
+                        <li>Delivery To</li>
+                        <ul>
+                            <li>42 Monavale Rd</li>
+                            <li>St Ives, 2075, Sydney</li>
+                        </ul>
+                    </ul>
+                    <!-----Horizontal Line----->
+                    <hr>
+                    <!-----Separately styles price box----->
+                    <div class="pricebox">
+                        <p>Total <s>$45</s> $30 </p>
+                        <p>Special Code Applied</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-----Next Button---->
+            <div><a href="5. checkout.html">
+                    <button type="button" value="submit" class="btnnext">
+                        Next
+                    </button>
+                </a></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
